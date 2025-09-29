@@ -6,10 +6,15 @@
   <style>
     body {
       margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       text-align: center;
       font-family: Arial, sans-serif;
       overflow: hidden;
-      background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fad0c4, #a18cd1, #fbc2eb, #84fab0, #8fd3f4, #fccb90, #ff9a9e);
+      background: linear-gradient(270deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb, #84fab0, #8fd3f4, #fccb90, #ff9a9e);
       background-size: 1800% 1800%;
       animation: rainbow 20s ease infinite;
     }
@@ -22,13 +27,13 @@
 
     h1 {
       font-size: 2.5em;
-      margin-top: 50px;
-      color: black; /* changed to black */
+      color: black;
+      margin: 0;
     }
 
     p {
       font-size: 1.2em;
-      margin-top: 10px;
+      margin-top: 15px;
       color: #333;
       animation: sparkle 2s infinite;
     }
@@ -57,18 +62,15 @@
     }
 
     #playBtn {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      padding: 10px 20px;
+      margin-top: 30px;
+      padding: 12px 24px;
       font-size: 1em;
-      background: hotpink;
+      background: black;
       color: white;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
   </style>
 </head>
@@ -81,7 +83,7 @@
     Your browser does not support the audio tag.
   </audio>
 
-  <button id="playBtn">🎵 Play Music</button>
+  <button id="playBtn">Play Me</button>
 
   <script>
     const balloons = ["🎈", "🎉", "💛", "💙", "💜", "💚", "❤️", "🤎"];
